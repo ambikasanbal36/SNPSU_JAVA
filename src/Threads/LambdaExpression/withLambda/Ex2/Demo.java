@@ -1,0 +1,11 @@
+package Threads.LambdaExpression.withLambda.Ex2;
+ interface Calculator{
+     int add(int a,int b);
+ }
+public class Demo {
+    static void main(String[] args) {
+        Calculator c = (int a,int b) -> a + b ;{
+            System.out.println(c.add(10, 20));
+        }
+    }
+}
